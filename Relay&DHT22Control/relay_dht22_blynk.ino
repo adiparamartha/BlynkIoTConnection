@@ -58,6 +58,7 @@ void setup()
   Serial.begin(9600);
 
   Blynk.begin(auth, ssid, pass);
+  Blynk.begin(auth, ssid, pass, "blynk-cloud.com", 8080); //Add this if your login timeout!
 
    dht.begin();
  
